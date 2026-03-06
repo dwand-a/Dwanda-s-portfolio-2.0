@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/dwanda-s-portfolio/',   // ← this is the key fix (include the leading & trailing slash)
   root: '.',
   server: {
     open: true
